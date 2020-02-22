@@ -1,0 +1,7 @@
+export { default as AppleMusic } from './AppleMusic'
+export { default as Deezer } from './Deezer'
+export { default as iTunes } from './iTunes'
+export { default as Soundcloud } from './Soundcloud'
+export { default as Spotify } from './Spotify'
+export { default as Vibe } from './Vibe'
+export { default as YoutubeMusic } from './YoutubeMusic'
