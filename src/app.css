@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:400,700,800|Raleway:900&display=swap');
+
 /* purgecss start ignore */
 @tailwind base;
+
+body {
+    @apply bg-black;
+}
+
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
