@@ -1,9 +1,9 @@
 import React from 'react'
-import BackgroundContainer from 'src/components/layout/BackgroundContainer'
+import BackgroundImage  from 'src/components/layout/BackgroundImage'
 import OuterWrapper from 'src/components/layout/OuterWrapper'
 import Section from 'src/components/layout/Section'
 import * as Logos from 'src/components/logos'
-import BackgroundImage from 'src/images/red-alley-long-shot.jpg'
+import LandingImage from 'src/images/red-alley-long-shot.jpg'
 import LandingLogo from 'src/svg/landing-logo.svg'
 import media from 'src/content/media'
 
@@ -43,7 +43,7 @@ export default function HomePage() {
         <Section isDark>
             <div className="flex flex-col h-screen">
                 <div className="flex-1">
-                    <BackgroundContainer src={BackgroundImage}>
+                    <BackgroundImage src={LandingImage}>
                         <OuterWrapper className="flex flex-col h-full">
                             <div className="flex flex-1 items-center">
                                 <img
@@ -52,7 +52,7 @@ export default function HomePage() {
                                 />
                             </div>
                         </OuterWrapper>
-                    </BackgroundContainer>
+                    </BackgroundImage>
                 </div>
                 <MediaLinks />
             </div>
