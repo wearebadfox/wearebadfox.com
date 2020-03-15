@@ -1,4 +1,4 @@
-import { createContext } from 'react'
+import React, { createContext } from 'react'
 
 const ThemeContext = createContext({
     isDark: false,
@@ -6,5 +6,13 @@ const ThemeContext = createContext({
 
 export const ThemeProvider = ThemeContext.Provider;
 export const ThemeConsumer = ThemeContext.Consumer;
+
+export function DarkThemeProvider({ children }) {
+    return (
+        <ThemeProvider value={{ isDark: true }}>
+            {children}
+        </ThemeProvider>
+    )
+}
 
 export default ThemeContext;
