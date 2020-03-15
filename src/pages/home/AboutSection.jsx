@@ -6,7 +6,7 @@ import { Button } from 'src/components/interactivity'
 import about from 'src/content/about'
 import Background from 'src/images/tunnel.jpg'
 
-export default function About() {
+export default function AboutSection() {
     return (
         <DarkThemeProvider>
             <section id="#about" className="bg-black text-white text-center md:text-right">

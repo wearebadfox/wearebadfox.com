@@ -1,12 +1,12 @@
 import React from 'react'
-import Landing from 'src/components/home/Landing'
-import About from 'src/components/home/About'
+import LandingSection from 'src/pages/home/LandingSection'
+import AboutSection from 'src/pages/home/AboutSection'
 
 export default function HomePage() {
     return (
         <>
-            <Landing />
-            <About />
+            <LandingSection />
+            <AboutSection />
         </>
     )
 }

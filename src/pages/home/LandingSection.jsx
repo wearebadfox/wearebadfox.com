@@ -37,10 +37,10 @@ function MediaLinks() {
     )
 }
 
-export default function Landing() {
+export default function LandingSection() {
     return (
         <DarkThemeProvider>
-            <section id="#about" className="bg-black text-white h-screen">
+            <section id="#landing" className="bg-black text-white h-screen">
                 <div className="flex flex-col h-screen">
                     <div className="flex-1">
                         <div
