@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import ThemeContext from 'src/context/ThemeContext'
 
-export default function Title({ children }) {
+export default function Heading({ children }) {
     const { isDark } = useContext(ThemeContext);
 
     return (
         <h1
-            className={`font-title font-black uppercase mb-10 text-4xl md:text-5xl 
+            className={`font-sans font-black lowercase mb-2 text-2xl md:text-3xl 
                 ${isDark ? 'text-white' : 'text-black'}`}
         >
             {children}
