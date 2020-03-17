@@ -9,7 +9,7 @@ module.exports = {
             lg: '1024px',
             xl: '1280px',
             portrait: {
-                raw: '(orientation: portrait)'
+                raw: '(orientation: portrait)',
             },
         },
         fontFamily: {
@@ -27,30 +27,32 @@ module.exports = {
             bottom: 'bottom',
             center: 'center',
             left: 'left',
-            'left-bottom': 'left bottom',
-            'left-top': 'left top',
             right: 'right',
-            'right-bottom': 'right bottom',
-            'right-top': 'right top',
             top: 'top',
+            'left-12': '12rem',
             'left--14': '-14rem',
         },
         colors: {
             black: '#121212',
             white: '#fff',
+            'white-100': '#fafafa',
+            'white-200': '#f0f2f5',
+            'grey-100': '#d7dde5',
             cherry: '#eb3349',
             orange: '#f25f44',
         },
         linearGradientDirections: {
+            b: 'to bottom',
             r: 'to right',
             l: 'to left',
         },
         linearGradientColors: {
             cherry: ['#f25f44', '#eb3349', '#f25f44'],
+            'transparent-white': ['#fff 50%', 'rgba(255, 255, 255, 0.8)'],
         },
         boxShadow: {
-            backdrop: '0 0 47px 7px rgba(244, 47, 74, 0.23)',
-            'backdrop-lg': '0 0 47px 15px rgba(244, 47, 74, 0.3)',
+            backdrop: '0 10px 30px 7px rgba(244, 47, 74, 0.25)',
+            'backdrop-lg': '0 10px 30px 14px rgba(244, 47, 74, 0.3)',
         },
         textShadow: {
             black: '0 1px 5px #121212',
@@ -61,6 +63,7 @@ module.exports = {
         backgroundPosition: ['responsive', 'hover', 'focus'],
         linearGradients: ['hover', 'focus'],
         boxShadow: ['responsive', 'hover', 'focus'],
+        padding: ['responsive', 'first', 'last'],
     },
     plugins: [
         require('tailwindcss-gradients'),
