@@ -3,8 +3,8 @@ import { DarkThemeProvider } from 'src/context/ThemeContext'
 import { OuterWrapper } from 'src/components/layout'
 import { Paragraph, Title } from 'src/components/typography'
 import { Button } from 'src/components/interactivity'
-import about from 'src/content/about'
 import Background from 'src/images/tunnel.jpg'
+import about from 'src/content/about'
 
 export default function AboutSection() {
     return (

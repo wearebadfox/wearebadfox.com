@@ -39,6 +39,7 @@ module.exports = {
                 100: '#fafafa',
                 200: '#f0f2f5',
                 300: '#d7dde5',
+                400: '#c5cdd8',
             },
             cherry: '#eb3349',
             orange: '#f25f44',
@@ -51,9 +52,13 @@ module.exports = {
         },
         linearGradientColors: {
             wiretrap: ['#f25f44', '#eb3349 65%', '#8f26d9'],
-            cherry: ['#f25f44', '#eb3349'],
+            cherry: {
+                orange: ['#f25f44', '#eb3349'],
+                purple: ['#eb3349', '#8f26d9'],
+            },
             transparent: {
-                white:['#fff 50%', 'rgba(255, 255, 255, 0.8)'],
+                full: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.8)'],
+                white: ['#fff 50%', 'rgba(255, 255, 255, 0.8)'],
             },
         },
         boxShadow: {
@@ -70,6 +75,7 @@ module.exports = {
         linearGradients: ['hover', 'focus'],
         boxShadow: ['responsive', 'hover', 'focus'],
         padding: ['responsive', 'first', 'last'],
+        margin: ['responsive', 'first', 'last'],
     },
     plugins: [
         require('tailwindcss-gradients'),

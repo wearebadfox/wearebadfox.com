@@ -2,11 +2,25 @@
 
 /* purgecss start ignore */
 @tailwind base;
-
-body {
-    @apply bg-black;
-}
-
 @tailwind components;
 /* purgecss end ignore */
+
 @tailwind utilities;
+
+@variants responsive, hover, focus {
+    .underline-thick-black {
+        text-decoration: solid underline #121212;
+    }
+
+    .underline-thick-white {
+        text-decoration: solid underline #ffffff;
+    }
+
+    .underline-thick-gray-400 {
+        text-decoration: solid underline #C5CDD8;
+    }
+
+    .underline-thick-cherry {
+        text-decoration: solid underline #8f26d9;
+    }
+}
