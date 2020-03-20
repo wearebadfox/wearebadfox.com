@@ -12,7 +12,7 @@ export default function TextInput({
             placeholder={placeholder || name}
             required={isRequired}
             className="appearance-none capitalize w-full bg-white-200 hover:bg-white-100 focus:bg-white
-                border-2 border-white-200 focus:border-orange focus:outline-none rounded px-5 pt-3 pb-2
+                border-2 border-white-200 focus:border-cherry focus:outline-none rounded px-5 pt-3 pb-2
                 transition-all duration-200"
         />
     )

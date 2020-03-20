@@ -21,7 +21,7 @@ module.exports = {
             cover: 'cover',
             contain: 'contain',
             none: '0',
-            '150%': '150%',
+            '3/2': '150%',
         },
         backgroundPosition: {
             bottom: 'bottom',
@@ -40,6 +40,7 @@ module.exports = {
             'grey-100': '#d7dde5',
             cherry: '#eb3349',
             orange: '#f25f44',
+            purple: '#8f26d9',
         },
         linearGradientDirections: {
             b: 'to bottom',
@@ -47,12 +48,13 @@ module.exports = {
             l: 'to left',
         },
         linearGradientColors: {
-            cherry: ['#f25f44', '#eb3349', '#f25f44'],
+            wiretrap: ['#f25f44', '#eb3349 65%', '#8f26d9'],
+            cherry: ['#f25f44', '#eb3349'],
             'transparent-white': ['#fff 50%', 'rgba(255, 255, 255, 0.8)'],
         },
         boxShadow: {
             backdrop: '0 10px 30px 7px rgba(244, 47, 74, 0.25)',
-            'backdrop-lg': '0 10px 30px 14px rgba(244, 47, 74, 0.3)',
+            'backdrop-lg': '0 10px 30px 14px rgba(143, 38, 217, 0.3)',
         },
         textShadow: {
             black: '0 1px 5px #121212',
