@@ -1,0 +1,10 @@
+{
+    "title": "Contact",
+    "emailPolicy": "Your email address will only be used in order to contact you. We will not use it for any other purpose whatsoever.",
+    "bookUs": {
+        "title": "Wanna book us?",
+        "info": "Fill out the contact form and we'll get back to you. Meanwhile, feel free to have a sneak peak at our press-kit and rider:",
+        "downloadRider": "Download\nrider",
+        "downloadPressKit": "Download\npress-kit"
+    }
+}

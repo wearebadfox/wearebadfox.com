@@ -15,4 +15,12 @@ export function DarkThemeProvider({ children }) {
     )
 }
 
+export function LightThemeProvider({ children }) {
+    return (
+        <ThemeProvider value={{ isDark: false }}>
+            {children}
+        </ThemeProvider>
+    )
+}
+
 export default ThemeContext;

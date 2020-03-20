@@ -6,7 +6,7 @@ export default function Title({ children }) {
 
     return (
         <h1
-            className={`font-title font-black uppercase mb-8 text-5xl md:text-6xl 
+            className={`font-title font-black uppercase mb-10 text-4xl md:text-5xl 
                 ${isDark ? 'text-white' : 'text-black'}`}
         >
             {children}
