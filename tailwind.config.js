@@ -35,9 +35,11 @@ module.exports = {
         colors: {
             black: '#121212',
             white: '#fff',
-            'white-100': '#fafafa',
-            'white-200': '#f0f2f5',
-            'grey-100': '#d7dde5',
+            gray: {
+                100: '#fafafa',
+                200: '#f0f2f5',
+                300: '#d7dde5',
+            },
             cherry: '#eb3349',
             orange: '#f25f44',
             purple: '#8f26d9',
@@ -50,7 +52,9 @@ module.exports = {
         linearGradientColors: {
             wiretrap: ['#f25f44', '#eb3349 65%', '#8f26d9'],
             cherry: ['#f25f44', '#eb3349'],
-            'transparent-white': ['#fff 50%', 'rgba(255, 255, 255, 0.8)'],
+            transparent: {
+                white:['#fff 50%', 'rgba(255, 255, 255, 0.8)'],
+            },
         },
         boxShadow: {
             backdrop: '0 10px 30px 7px rgba(244, 47, 74, 0.25)',
@@ -58,7 +62,7 @@ module.exports = {
         },
         textShadow: {
             black: '0 1px 5px #121212',
-        }
+        },
     },
     variants: {
         colors: ['hover', 'focus'],
