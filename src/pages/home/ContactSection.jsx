@@ -1,6 +1,6 @@
 import React from 'react'
 import { LightThemeProvider } from 'src/context/ThemeContext'
-import { OuterWrapper } from 'src/components/layout'
+import { OuterWrapper, Footer } from 'src/components/layout'
 import { Button, Link } from 'src/components/interactivity'
 import { DownloadFile } from 'src/components/icons'
 import { InputRow, TextInput, TextArea } from 'src/components/input'
@@ -42,8 +42,8 @@ export default function ContactSection() {
                                     </InputRow>
                                 </form>
                             </div>
-                            <div className="bg-gradient-b-cherry-orange rounded
-                                h-1 md:h-auto w-full md:w-1 md:mx-20 my-12 md:my-0"
+                            <div className="bg-gradient-b-wiretrap rounded
+                                h-0 md:h-auto w-full md:w-1 md:mx-20 my-12 md:my-0"
                             />
                             <div className="flex justify-center flex-col flex-1">
                                 <Heading>{contact.bookUs.title}</Heading>
@@ -63,6 +63,7 @@ export default function ContactSection() {
                             </div>
                         </div>
                     </OuterWrapper>
+                    <Footer />
                 </div>
             </section>
         </LightThemeProvider>

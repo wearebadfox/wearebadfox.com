@@ -2,25 +2,26 @@
 
 /* purgecss start ignore */
 @tailwind base;
+
+p a {
+    @apply underline px-1;
+}
+
+p a:hover, p a:focus {
+    @apply text-white bg-gradient-r-cherry-purple;
+}
+
 @tailwind components;
 /* purgecss end ignore */
 
 @tailwind utilities;
 
 @variants responsive, hover, focus {
-    .underline-thick-black {
-        text-decoration: solid underline #121212;
-    }
-
     .underline-thick-white {
         text-decoration: solid underline #ffffff;
     }
 
     .underline-thick-gray-400 {
         text-decoration: solid underline #C5CDD8;
-    }
-
-    .underline-thick-cherry {
-        text-decoration: solid underline #8f26d9;
     }
 }
