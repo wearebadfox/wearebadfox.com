@@ -4,9 +4,9 @@ import { OuterWrapper } from 'src/components/layout'
 import * as Logos from 'src/components/logos'
 import Background from 'src/images/red-alley-long-shot.jpg'
 import LandingLogo from 'src/svg/bad-fox-wiretrap-logo.svg'
-import media from 'src/content/media'
+import content from 'src/content/global'
 
-function MediaLink({ name, url }) {
+function ListenLink({ name, url }) {
     const Logo = Logos[name.replace(' ', '')];
 
     if (! Logo) {
@@ -25,12 +25,12 @@ function MediaLink({ name, url }) {
     )
 }
 
-function MediaLinks() {
+function ListenLinks() {
     return (
         <ul className="list-none flex flex-wrap justify-center p-3">
-            {media.map((media) => (
+            {Object.values(content.listen).map((media) => (
                 <li key={media.name}>
-                    <MediaLink {...media} />
+                    <ListenLink {...media} />
                 </li>
             ))}
         </ul>
@@ -57,7 +57,7 @@ export default function LandingSection() {
                             </OuterWrapper>
                         </div>
                     </div>
-                    <MediaLinks />
+                    <ListenLinks />
                 </div>
             </section>
         </DarkThemeProvider>

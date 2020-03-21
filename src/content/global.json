@@ -1,0 +1,36 @@
+{
+    "listen": {
+        "appleMusic": {
+            "name": "Apple Music",
+            "url": "https://music.apple.com/be/artist/bad-fox/1361298140"
+        },
+        "youtubeMusic": {
+            "name": "Youtube Music",
+            "url": "https://music.youtube.com/channel/UCLNHKBzu_lD81nx6sdaLkPQ"
+        },
+        "youtube": {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCr_0NYUiQazgOS1clASDxIg"
+        },
+        "spotify": {
+            "name": "Spotify",
+            "url": "https://music.apple.com/be/artist/bad-fox/1361298140"
+        },
+        "deezer": {
+            "name": "Deezer",
+            "url": "https://www.deezer.com/artist/14370891"
+        },
+        "soundcloud": {
+            "name": "Soundcloud",
+            "url": "https://soundcloud.com/wearebadfox"
+        },
+        "vibe": {
+            "name": "Vibe",
+            "url": "https://vi.be/badfox"
+        }
+    },
+    "footer": {
+        "copyright": "©:year: Bad Fox",
+        "credits": "Design & development by <a href=\"https://twitter.com/RemiPelhate\" target=\"__blank\">Rémi Pelhate</a>\nAll pictures by <a href=\"https://www.thomasgeuens.be/\" target=\"__blank\">Thomas Geuens</a> and <a href=\"https://www.photograus.be/\" target=\"__blank\">Ben Graus</a>"
+    }
+}
