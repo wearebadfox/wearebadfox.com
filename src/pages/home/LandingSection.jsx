@@ -3,7 +3,7 @@ import { DarkThemeProvider } from 'src/context/ThemeContext'
 import { OuterWrapper } from 'src/components/layout'
 import * as Logos from 'src/components/logos'
 import Background from 'src/images/red-alley-long-shot.jpg'
-import LandingLogo from 'src/svg/bad-fox-logo.svg'
+import LandingLogo from 'src/svg/bad-fox-wiretrap-logo.svg'
 import media from 'src/content/media'
 
 function MediaLink({ name, url }) {
