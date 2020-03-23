@@ -1,23 +1,35 @@
 import React, { createContext } from 'react'
 
-const ThemeContext = createContext({
+const LIGHT = {
     isDark: false,
-});
+    theme: 'light',
+    text: 'text-black',
+    bg: 'bg-black',
+};
+
+const DARK = {
+    isDark: true,
+    theme: 'dark',
+    text: 'text-white',
+    bg: 'bg-white',
+};
+
+const ThemeContext = createContext(LIGHT);
 
 export const ThemeProvider = ThemeContext.Provider;
 export const ThemeConsumer = ThemeContext.Consumer;
 
-export function DarkThemeProvider({ children }) {
+export function LightThemeProvider({ children }) {
     return (
-        <ThemeProvider value={{ isDark: true }}>
+        <ThemeProvider value={LIGHT}>
             {children}
         </ThemeProvider>
     )
 }
 
-export function LightThemeProvider({ children }) {
+export function DarkThemeProvider({ children }) {
     return (
-        <ThemeProvider value={{ isDark: false }}>
+        <ThemeProvider value={DARK}>
             {children}
         </ThemeProvider>
     )
