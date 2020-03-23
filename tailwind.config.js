@@ -51,7 +51,7 @@ module.exports = {
             l: 'to left',
         },
         linearGradientColors: {
-            wiretrap: ['#f25f44', '#eb3349 65%', '#8f26d9'],
+            wiretrap: ['#f25f44', '#eb3349', '#8f26d9'],
             cherry: {
                 orange: ['#f25f44', '#eb3349'],
                 purple: ['#eb3349', '#8f26d9'],

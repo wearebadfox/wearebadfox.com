@@ -29,8 +29,19 @@
             "url": "https://vi.be/badfox"
         }
     },
+    "followUs": "follow us",
+    "social": {
+        "instagram": {
+            "name": "Instagram",
+            "url": "https://instagram.com/wearebadfox"
+        },
+        "facebook": {
+            "name": "Facebook",
+            "url": "https://facebook.com/wearebadfox"
+        }
+    },
     "footer": {
         "copyright": "©:year: Bad Fox",
-        "credits": "Design & development by <a href=\"https://twitter.com/RemiPelhate\" target=\"__blank\">Rémi Pelhate</a>\nAll pictures by <a href=\"https://www.thomasgeuens.be/\" target=\"__blank\">Thomas Geuens</a> and <a href=\"https://www.photograus.be/\" target=\"__blank\">Ben Graus</a>"
+        "credits": "Design & development by <a href=\"https://twitter.com/RemiPelhate\" target=\"_blank\">Rémi Pelhate</a>\nAll pictures by <a href=\"https://www.thomasgeuens.be/\" target=\"_blank\">Thomas Geuens</a> and <a href=\"https://www.photograus.be/\" target=\"_blank\">Ben Graus</a>"
     }
 }
