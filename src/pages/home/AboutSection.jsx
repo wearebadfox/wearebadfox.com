@@ -17,7 +17,7 @@ export default function AboutSection() {
                     <div className="flex justify-end py-16 xl:py-32">
                         <OuterWrapper className="h-full md:w-3/4 lg:w-2/3">
                             <Title>{about.title}</Title>
-                            <Paragraph>{about.shortBio}</Paragraph>
+                            <Paragraph className="mb-6">{about.shortBio}</Paragraph>
                             <Button>more</Button>
                         </OuterWrapper>
                     </div>

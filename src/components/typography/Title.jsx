@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
+import classNames from 'classnames'
 import ThemeContext from 'src/context/ThemeContext'
 
+const DEFAULT = 'font-title font-black text-4xl md:text-5xl uppercase mb-10';
+
 export default function Title({ children }) {
-    const { isDark } = useContext(ThemeContext);
+    const { text } = useContext(ThemeContext);
 
     return (
-        <h1
-            className={`font-title font-black uppercase mb-10 text-4xl md:text-5xl 
-                ${isDark ? 'text-white' : 'text-black'}`}
-        >
+        <h1 className={classNames(DEFAULT, text)}>
             {children}
         </h1>
     )

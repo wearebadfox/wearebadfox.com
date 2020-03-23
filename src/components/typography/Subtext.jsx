@@ -1,11 +1,14 @@
 import React, { useContext } from 'react'
+import classNames from 'classnames'
 import ThemeContext from 'src/context/ThemeContext'
 
+const DEFAULT = 'text-xs leading-normal';
+
 export default function Subtext({ children }) {
-    const { isDark } = useContext(ThemeContext);
+    const { text } = useContext(ThemeContext);
 
     return (
-        <span className={`text-xs leading-normal ${isDark ? 'text-white' : 'text-black'}`}>
+        <span className={classNames(DEFAULT, text)}>
             {children}
         </span>
     )

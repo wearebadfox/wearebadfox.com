@@ -47,7 +47,7 @@ export default function ContactSection() {
                             />
                             <div className="flex justify-center flex-col flex-1">
                                 <Heading>{contact.bookUs.title}</Heading>
-                                <Paragraph>{contact.bookUs.info}</Paragraph>
+                                <Paragraph className="mb-6">{contact.bookUs.info}</Paragraph>
                                 <div className="flex justify-center md:justify-start">
                                     <Link renderIcon={(props) => (
                                         <DownloadFile {...props} width={32} />

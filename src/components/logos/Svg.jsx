@@ -1,4 +1,7 @@
 import React from 'react'
+import classNames from 'classnames'
+
+const DEFAULT = 'transition-all duration-150';
 
 export default function Svg({
     viewBox,
@@ -15,7 +18,7 @@ export default function Svg({
             width={width}
             height={height}
             fill={color}
-            className={`transition-all duration-150 ${className}`}
+            className={classNames(className, DEFAULT)}
         >
             {children}
         </svg>
@@ -26,4 +29,5 @@ Svg.defaultProps = {
     color: 'currentColor',
     width: undefined,
     height: undefined,
+    className: undefined,
 };
