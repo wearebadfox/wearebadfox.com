@@ -4,7 +4,7 @@ import ThemeContext from 'src/context/ThemeContext'
 
 const DEFAULT = 'text-xs leading-normal';
 
-export default function Subtext({ children }) {
+export default function SubText({ children }) {
     const { text } = useContext(ThemeContext);
 
     return (

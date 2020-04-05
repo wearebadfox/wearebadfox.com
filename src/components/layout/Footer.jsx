@@ -12,7 +12,7 @@ export default function Footer() {
         <footer className="whitespace-pre-wrap">
             <OuterWrapper className="md:flex pt-0 pb-10 md:py-16">
                 <div className="flex-1">
-                    <Paragraph className="pb-10">
+                    <Paragraph>
                         {parseHtml(copyright)}
                         <span className="px-2">/</span>
                         {parseHtml(content.footer.credits)}

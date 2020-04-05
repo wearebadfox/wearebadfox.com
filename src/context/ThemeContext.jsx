@@ -4,14 +4,14 @@ const LIGHT = {
     isDark: false,
     theme: 'light',
     text: 'text-black',
-    bg: 'bg-black',
+    bg: 'bg-white',
 };
 
 const DARK = {
     isDark: true,
     theme: 'dark',
     text: 'text-white',
-    bg: 'bg-white',
+    bg: 'bg-black',
 };
 
 const ThemeContext = createContext(LIGHT);
