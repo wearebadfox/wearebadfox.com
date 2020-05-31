@@ -1,21 +1,65 @@
 module.exports = {
     theme: {
+        screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+        },
         fontFamily: {
-            default: ['Jost', 'sans-serif'],
+            caps: ['Jost', 'sans-serif'],
+            default: ['Titillium Web', 'sans-serif'],
         },
         colors: {
-            black: 'rgb(13, 13, 13)',
+            black: 'rgb(0, 0, 0)',
             white: 'rgb(255, 255, 255)',
+            neutral: {
+                600: 'rgb(69, 67, 78)',
+            },
+            cherry: {
+                500: 'rgb(235, 51, 73)',
+            },
+            peach: {
+                500: 'rgb(242, 95, 68)',
+            },
+            purple: {
+                500: 'rgb(143, 38, 217)',
+            },
+            transparent: 'transparent',
         },
         linearGradientDirections: {
             b: 'to bottom',
             r: 'to right',
             l: 'to left',
         },
-        linearGradientColors: {
+        linearGradientColors: theme => ({
+            'wiretrap': [theme('colors.cherry.500'), theme('colors.purple.500')],
+            'cherry-peach': [theme('colors.cherry.500'), theme('colors.peach.500')],
+            'transparent-black': [`rgba(0, 0, 0, 0.5)`, `${theme('colors.black')} 90%`],
+        }),
+        extend: {
+            spacing: {
+                11: '2.25rem',
+                13: '3.25rem',
+                14: '3.5rem',
+                17: '4.25rem',
+            },
+            minHeight: {
+                'md': '28rem',
+                'lg': '32rem',
+                'xl': '36rem',
+                '2xl': '42rem',
+            },
+            maxHeight: {
+                'md': '28rem',
+                'lg': '32rem',
+                'xl': '36rem',
+                '2xl': '42rem',
+            },
         },
     },
     variants: {
+        border: ['hover', 'focus'],
         colors: ['hover', 'focus'],
         backgroundPosition: ['responsive', 'hover', 'focus'],
         linearGradients: ['hover', 'focus'],

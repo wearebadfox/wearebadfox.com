@@ -1,0 +1,32 @@
+[
+    {
+        "id": "AppleMusic",
+        "name": "Apple Music",
+        "url": "https://music.apple.com/be/artist/bad-fox/1361298140"
+    },
+    {
+        "id": "YoutubeMusic",
+        "name": "Youtube Music",
+        "url": "https://music.youtube.com/channel/UCLNHKBzu_lD81nx6sdaLkPQ"
+    },
+    {
+        "id": "Spotify",
+        "name": "Spotify",
+        "url": "https://music.apple.com/be/artist/bad-fox/1361298140"
+    },
+    {
+        "id": "Deezer",
+        "name": "Deezer",
+        "url": "https://www.deezer.com/artist/14370891"
+    },
+    {
+        "id": "Soundcloud",
+        "name": "Soundcloud",
+        "url": "https://soundcloud.com/wearebadfox"
+    },
+    {
+        "id": "Vibe",
+        "name": "Vibe",
+        "url": "https://vi.be/badfox"
+    }
+]

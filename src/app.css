@@ -1,7 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
-
 /* purgecss start ignore */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Titillium+Web:wght@300;400&display=swap');
+
 @tailwind base;
+
+body {
+    @apply bg-black;
+    @apply text-white;
+    @apply font-default;
+}
+
+a {
+    @apply underline;
+}
+
+a:hover {
+    @apply text-white;
+}
+
 @tailwind components;
 /* purgecss end ignore */
 
