@@ -2,8 +2,12 @@ import React from 'react'
 import Svg from './Svg'
 
 export default function Vibe(props) {
+    // Because of the all caps text, the vi.be logo looks rather big next to any other logo.
+    // For that reason, we slightly reduce it by default.
+    const height = `calc(${props.height} * 0.8)`;
+
     return (
-        <Svg {...props} viewBox="0 0 1775 500">
+        <Svg {...props} height={height} viewBox="0 0 1775 500">
             <g transform="matrix(4.16667,0,0,4.16667,0,0)">
                 <rect x="128.033" y="0.169" width="27.731" height="119.831" />
                 <path d="M44.68,120L72.411,120L117.093,0.169L86.279,0.169L62.997,67.446C61.285,72.41 59.915,77.546

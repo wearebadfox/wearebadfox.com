@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import Svg from './Svg'
 
 export default function Spotify(props) {
@@ -7,7 +8,7 @@ export default function Spotify(props) {
     const height = `calc(${props.height} * 1.5)`;
 
     return (
-        <Svg {...props} height={height} viewBox="0 0 2363 713" className="-mt-1">
+        <Svg {...props} height={height} className={classNames('-mt-1', props.className)} viewBox="0 0 2363 713">
             <g transform="matrix(4.16667,0,0,4.16667,0,0)">
                 <path d="M137.532,76.477C110.538,60.446 66.012,58.972 40.243,66.794C36.104,68.049 31.728,65.713
                     30.475,61.575C29.22,57.434 31.554,53.061 35.695,51.803C65.277,42.824 114.451,44.559 145.527
