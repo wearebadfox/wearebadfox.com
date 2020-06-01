@@ -22,7 +22,7 @@ export default function Svg({
         >
             {children}
         </svg>
-    )
+    );
 }
 
 Svg.defaultProps = {

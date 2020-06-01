@@ -1,22 +1,22 @@
 import React from 'react'
 import classNames from 'classnames'
-import * as Logos from 'src/components/logos'
+import * as Icons from 'src/components/icons'
 
 const DEFAULT = classNames(
-    'inline-block flex-1 h-13 py-4 px-6 border-3 border-black',
+    'block h-10 w-10 p-2',
     'hover:border-white transition-all duration-75',
 );
 
-export default function StreamingServiceLink({ id, url }) {
-    const Logo = Logos[id];
+export default function SocialLink({ name, url }) {
+    const Icon = Icons[name];
 
-    if (! Logo) {
+    if (!Icon) {
         return null;
     }
 
     return (
         <a href={url} className={DEFAULT} target="_blank" rel="noopener noreferrer external">
-            <Logo height="1rem" className="block mx-auto" />
+            <Icon height="100%" className="block mx-auto"/>
         </a>
     );
 }

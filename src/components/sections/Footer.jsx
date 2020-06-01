@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import parseHtml from 'react-html-parser'
 
-const DEFAULT = 'font-light text-sm text-center text-neutral-600 m-6';
+const DEFAULT = 'font-light text-sm text-center text-neutral-400 m-6';
 const SEPARATOR = 'mx-2';
 
 function Separator() {

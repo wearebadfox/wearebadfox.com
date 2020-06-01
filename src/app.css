@@ -1,5 +1,5 @@
 /* purgecss start ignore */
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Titillium+Web:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Titillium+Web:wght@300;400;700&display=swap');
 
 @tailwind base;
 
@@ -7,14 +7,20 @@ body {
     @apply bg-black;
     @apply text-white;
     @apply font-default;
+    @apply antialiased;
 }
 
 a {
     @apply underline;
 }
 
-a:hover {
+a:hover,
+a:focus {
     @apply text-white;
+}
+
+.outline-none-important {
+    outline: none !important;
 }
 
 @tailwind components;

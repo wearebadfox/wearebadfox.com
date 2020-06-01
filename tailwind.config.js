@@ -14,6 +14,7 @@ module.exports = {
             black: 'rgb(0, 0, 0)',
             white: 'rgb(255, 255, 255)',
             neutral: {
+                400: 'rgb(151, 151, 151)',
                 600: 'rgb(69, 67, 78)',
             },
             cherry: {
@@ -38,6 +39,9 @@ module.exports = {
             'transparent-black': [`rgba(0, 0, 0, 0.5)`, `${theme('colors.black')} 90%`],
         }),
         extend: {
+            borderWidth: {
+               3: '3px',
+            },
             spacing: {
                 11: '2.25rem',
                 13: '3.25rem',
@@ -59,13 +63,15 @@ module.exports = {
         },
     },
     variants: {
-        border: ['hover', 'focus'],
-        colors: ['hover', 'focus'],
+        border: ['hover', 'focus', 'group-hover'],
+        colors: ['hover', 'focus', 'group-hover'],
+        textColor: ['hover', 'focus', 'group-hover'],
         backgroundPosition: ['responsive', 'hover', 'focus'],
         linearGradients: ['hover', 'focus'],
         boxShadow: ['responsive', 'hover', 'focus'],
         padding: ['responsive', 'first', 'last'],
-        margin: ['responsive', 'first', 'last'],
+        margin: ['responsive', 'first', 'last', 'group-hover'],
+        opacity: ['hover', 'focus', 'group-hover'],
     },
     plugins: [
         require('tailwindcss-gradients'),
