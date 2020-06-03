@@ -1,0 +1,11 @@
+.menu-icon.is-open .bar-1 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: 30% 45%;
+}
+
+.menu-icon.is-open .bar-2 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transform-origin: 15% 60%;
+}
