@@ -3,8 +3,8 @@ import classNames from 'classnames'
 import * as Logos from 'src/components/logos'
 
 const DEFAULT = classNames(
-    'inline-block flex-1 h-13 py-4 px-6 border-3 border-black',
-    'hover:border-white transition-all duration-75',
+    'inline-block flex-1 h-12 py-4 px-6 rounded',
+    'hover:bg-cerise-500 hover:text-white transition-all duration-75',
 );
 
 export default function StreamingServiceLink({ id, url }) {

@@ -5,8 +5,8 @@ import ArrowRight from 'src/components/icons/ArrowRight'
 
 const DEFAULT = classNames(
     'flex justify-between items-center py-3 px-6',
-    'bg-black font-bold text-5xl no-underline',
-    'group hover:bg-white focus:bg-white hover:text-black focus:text-black transition-all duration-75',
+    'bg-black font-bold text-5xl no-underline rounded',
+    'group hover:bg-cerise-500 focus:bg-cerise-500 hover:text-white focus:text-white transition-all duration-75',
 );
 const ARROW = classNames(
     'opacity-0 mr-4',

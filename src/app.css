@@ -16,7 +16,7 @@ a {
 
 a:hover,
 a:focus {
-    @apply text-white;
+    @apply text-malibu-500;
 }
 
 .outline-none-important {
