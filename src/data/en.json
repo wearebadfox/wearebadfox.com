@@ -1,5 +1,15 @@
 {
+    "home": "Home",
     "followUs": "Follow us",
     "aboutUs": "About us",
-    "contact": "Contact"
+    "contact": {
+        "title": "Contact",
+        "subTitle": "Feel free to contact us and we'll get back to you as soon as possible.",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "E-mail",
+        "message": "Message",
+        "next": "Next",
+        "disclaimer": "Your email address will only be used in order to contact you. We will not use it for any other purpose whatsoever."
+    }
 }

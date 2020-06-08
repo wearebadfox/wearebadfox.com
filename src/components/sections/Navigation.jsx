@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import parseHtml from 'react-html-parser'
 import { contact, home } from 'src/routes'
@@ -31,6 +31,7 @@ function MenuIcon({ isOpen, setIsOpen }) {
 }
 
 export default function Navigation() {
+    const navigationEl = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const { site, data } = useStaticQuery(
         graphql`
@@ -51,8 +52,14 @@ export default function Navigation() {
         `
     );
 
+    useEffect(() => {
+        if (navigationEl) {
+            console.log(navigationEl.current.getBoundingClientRect());
+        }
+    });
+
     return (
-        <>
+        <div ref={navigationEl}>
             <div className="flex justify-center">
                 <MenuIcon isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
@@ -72,6 +79,6 @@ export default function Navigation() {
                     </nav>
                 </OverlayPortal>
             )}
-        </>
+        </div>
     );
 }

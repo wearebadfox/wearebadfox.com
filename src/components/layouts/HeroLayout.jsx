@@ -13,7 +13,7 @@ export default function HeroLayout({ children, file, renderHeroHeader }) {
                 <HeroHeader isFullPage={isFullPage} file={file}>
                     {renderHeroHeader()}
                 </HeroHeader>
-                <main className="flex-1">{children}</main>
+                <main className="flex-1 px-6">{children}</main>
                 <Footer />
             </div>
             <aside id="overlays" />
