@@ -14,9 +14,13 @@ a {
     @apply underline;
 }
 
-a:hover,
-a:focus {
+a:hover {
     @apply text-malibu-500;
+}
+
+a:focus {
+    @apply outline-none;
+    @apply shadow-outline;
 }
 
 .outline-none-important {

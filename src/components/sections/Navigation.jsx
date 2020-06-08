@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import parseHtml from 'react-html-parser'
+import { contact, home } from 'src/routes'
 import Menu from 'src/components/icons/Menu'
 import OverlayPortal from 'src/components/interactivity/Overlay'
 import NavigationLink from 'src/components/sections/NavigationLink'
@@ -20,7 +21,7 @@ function MenuIcon({ isOpen, setIsOpen }) {
 
     return (
         <button
-            className="appearance-none outline-none-important"
+            className="appearance-none outline-none-important focus:shadow-outline"
             onClick={onClick}
             onKeyDown={onKeyDown}
         >
@@ -40,8 +41,11 @@ export default function Navigation() {
                     }
                 }
                 data: dataJson {
+                    home
                     aboutUs
-                    contact
+                    contact {
+                        title
+                    }
                 }
             }
         `
@@ -57,8 +61,9 @@ export default function Navigation() {
                     <nav className={DEFAULT}>
                         <div className="flex-1 flex flex-col">
                             <div className="flex flex-col justify-center">
+                                <NavigationLink to={home}>{data.home}</NavigationLink>
                                 <NavigationLink>{data.aboutUs}</NavigationLink>
-                                <NavigationLink>{data.contact}</NavigationLink>
+                                <NavigationLink to={contact}>{data.contact.title}</NavigationLink>
                             </div>
                             <div className="border-t border-solid border-neutral-600 py-6 mx-6 my-4">
                                 {parseHtml(site.siteMetadata.copyright)}

@@ -4,7 +4,8 @@ import * as Logos from 'src/components/logos'
 
 const DEFAULT = classNames(
     'inline-block flex-1 h-12 py-4 px-6 rounded',
-    'hover:bg-cerise-500 hover:text-white transition-all duration-75',
+    'hover:bg-cerise-500 hover:text-white focus:outline-none focus:shadow-outline focus:text-white',
+    'transition-all duration-75',
 );
 
 export default function StreamingServiceLink({ id, url }) {
